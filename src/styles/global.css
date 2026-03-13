@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ec5b13;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #221610;
+  --font-display: "Public Sans", sans-serif;
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary/30;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(236, 91, 19, 0.05);
+  }
+  
+  :global(.dark) .glass-card {
+    background: rgba(34, 22, 16, 0.6);
+    border: 1px solid rgba(236, 91, 19, 0.1);
+  }
+
+  .glass-nav {
+    background: rgba(248, 246, 246, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(236, 91, 19, 0.1);
+  }
+
+  :global(.dark) .glass-nav {
+    background: rgba(34, 22, 16, 0.95);
+    border-bottom: 1px solid rgba(236, 91, 19, 0.2);
+  }
+
+  .bubble-accent {
+    background: radial-gradient(circle at 30% 30%, rgba(236, 91, 19, 0.15), transparent);
+  }
+}

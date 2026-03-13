@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Inicio">
+	<Navigation />
+	
+	<main class="pt-32 pb-20 px-6">
+		<!-- Hero Section -->
+		<section class="max-w-7xl mx-auto mb-24">
+			<div class="relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[16/7] flex items-center justify-center text-center p-8 group">
+				<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=2070')"></div>
+				<div class="relative z-10 max-w-3xl">
+					<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tighter mb-6">
+						BioDigestores <span class="text-primary italic">Villavicencio</span>
+					</h1>
+					<p class="text-slate-200 text-lg md:text-xl font-medium mb-10 leading-relaxed max-w-5xl mx-auto text-pretty">
+						La línea de biodigestores VILLAVICENCIO fue desarrollada para mejorar el nivel del tratamiento de efluentes biológicos cloacales domiciliarios. Esta línea es de amplio margen de aplicación ya que la misma puede adaptarse a un número ilimitado de necesidades respetando los volumenes maximos de uso, dando como valor agregado ventajas y beneficios tanto para el instalador como para el usuario final.
+					</p>
+					<div class="flex flex-wrap items-center justify-center gap-4">
+						<a href="/trabajo" class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/30">
+							Ver Proyectos
+						</a>
+						<a href="/sobre-mi" class="glass-card text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors">
+							Nuestra Historia
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Section -->
+		<section class="max-w-7xl mx-auto mb-24">
+			<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+				<div class="max-w-2xl">
+					<span class="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Nuestras Soluciones</span>
+					<h2 class="text-xl font-black tracking-tight uppercase">Biodigestores <span class="text-primary">Villavicencio</span></h2>
+					<p class="text-slate-600 dark:text-slate-400 text-lg">Ofrecemos tecnología de vanguardia para la gestión eficiente de residuos y producción de energía limpia.</p>
+				</div>
+			</div>
+			<div class="grid md:grid-cols-3 gap-6 items-stretch">
+				<div class="glass-card p-8 rounded-xl group hover:border-primary/40 transition-all bubble-accent flex flex-col h-full">
+					<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors shrink-0">
+						<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors text-3xl">factory</span>
+					</div>
+					<h3 class="text-xl font-bold mb-3">BIODIGESTORES</h3>
+					<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Fabricación propia de biodigestores, trampas de grasa, tanques de agua desde 550 lts a 26.000lts.</p>
+				</div>
+				<div class="glass-card p-8 rounded-xl group hover:border-primary/40 transition-all bubble-accent flex flex-col h-full">
+					<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors shrink-0">
+						<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors text-3xl">local_shipping</span>
+					</div>
+					<h3 class="text-xl font-bold mb-3 uppercase">Logística e Instalaciones</h3>
+					<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">Nuestra empresa ofrece el servicio de instalacion de sistemas de biocloacas , biogas ,y contrucciones en gral,contando con un servicio de logistica y maquinas viales</p>
+				</div>
+				<div class="glass-card p-8 rounded-xl group hover:border-primary/40 transition-all bubble-accent flex flex-col h-full">
+					<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors shrink-0">
+						<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors text-3xl">verified</span>
+					</div>
+					<h3 class="text-xl font-bold mb-3">Principales Características</h3>
+					<ul class="text-slate-600 dark:text-slate-400 text-xs space-y-2 mt-auto">
+						<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-xs mt-0.5">check_circle</span> <span>Instalación sencilla e inmediata.</span></li>
+						<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-xs mt-0.5">check_circle</span> <span>No necesita accesorios adicionales.</span></li>
+						<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-xs mt-0.5">check_circle</span> <span>Puede utilizarse sin modificar hábitos normales.</span></li>
+						<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-xs mt-0.5">check_circle</span> <span>Hermético, no contamina el ambiente.</span></li>
+						<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-xs mt-0.5">check_circle</span> <span>Limpieza rápida y sencilla.</span></li>
+						<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-xs mt-0.5">check_circle</span> <span>Mayor extracción de lodos.</span></li>
+						<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-xs mt-0.5">check_circle</span> <span>Fondo plano para fácil instalación.</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- How it Works Section -->
+		<section class="max-w-7xl mx-auto mb-24">
+			<div class="glass-card p-12 rounded-2xl relative overflow-hidden bubble-accent">
+				<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+					<div>
+						<span class="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Proceso Eficiente</span>
+						<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-6">¿Cómo Funciona?</h2>
+						<div class="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+							<p>
+								Su funcionamiento sencillo y eficiente consta de los siguientes pasos: el líquido a tratar ingresa por la tubería de entrada, depositando debido a la retención hídrica, los sólidos en el fondo del módulo biodigestor mientras que el líquido sigue su curso por el tubo central pasando por el material filtrante de sólido/líquido.
+							</p>
+							<p>
+								Mientras tanto se produce en el interior del módulo biodigestor la digestión anaeróbica de la materia orgánica (ausencia de oxígeno). 
+							</p>
+							<p>
+								Al terminar dicho recorrido se completa el tratamiento del efluente sanitario, que saldrá por la tubería de salida, como agua clarificada con destino a un pozo absorbente, lecho nitrificante u humedal o en el mejor de los casos a un sistema cloacal.
+							</p>
+						</div>
+					</div>
+					<div class="bg-primary/5 rounded-2xl p-4 border border-primary/10">
+						<div class="aspect-square flex items-center justify-center overflow-hidden rounded-xl">
+							<img src="/img/funcionamiento.png" alt="Funcionamiento Biodigestor" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to Action -->
+		<section class="max-w-7xl mx-auto mt-24">
+			<div class="glass-card rounded-xl p-12 text-center relative overflow-hidden">
+				<div class="absolute -top-20 -right-20 size-64 bg-primary/10 rounded-full blur-3xl"></div>
+				<div class="absolute -bottom-20 -left-20 size-64 bg-primary/10 rounded-full blur-3xl"></div>
+				<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-6">¿Listo para unirte a la <span class="text-primary italic">revolución</span> verde?</h2>
+				<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+					Contáctenos hoy para recibir una consultoría personalizada y descubrir cómo podemos optimizar la gestión de sus recursos.
+				</p>
+				<div class="flex flex-wrap justify-center gap-4">
+					<a href="/contacto" class="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
+						Hablemos
+					</a>
+					<a href="/sobre-mi" class="glass-card px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-colors">
+						Saber Más
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</Layout>
